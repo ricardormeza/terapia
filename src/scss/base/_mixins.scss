@@ -1,0 +1,64 @@
+/** Media Queries **/
+@mixin minitelefono {
+    @media (min-width: #{$minitelefono}) {
+        @content;
+    }
+}
+@mixin telefono {
+    @media (max-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin tabletDos {
+    @media (max-width: #{$ipad}) {
+        @content;
+    }
+}   
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin desktopDos {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin monitor {
+    @media (min-width: #{$monitor}) {
+        @content;
+    }
+}
+@mixin pantalla {
+    @media (min-width: #{$pantalla}) {
+        @content;
+    }
+}
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin boton($bgColor, $display ) {
+    background-color: $secundario;
+    color: white;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: $separacion / 2;
+    display: $display;
+    border: none;
+
+    &:hover {
+        background-color: darken($secundario, 5);
+        cursor: pointer;
+    }
+}

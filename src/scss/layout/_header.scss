@@ -1,0 +1,50 @@
+
+.header{
+
+    .contenido-header{
+        padding: 2rem;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        picture{
+            width: 25rem;
+        }
+
+        // .navegacion{
+        //     display: flex;
+        //     justify-content: space-around;
+        //     gap: 2rem;
+
+        //     a{
+        //         font-size: 2.2rem;
+        //     }
+        // }
+    }
+    a{
+        color: white;
+        &:hover{
+            color: blue;
+        }
+    }
+    
+}
+
+.bg-header{
+    background-image: url(/build/img/Conocenos.webp);
+    // background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80rem;
+    
+    @include tablet{
+        background-position: -27rem 0rem;
+    }
+    @include telefono{
+        background-position: -63rem 0rem;
+    }
+    @include desktop{
+        background-position: center center;
+    }
+}

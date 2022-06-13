@@ -1,0 +1,1 @@
+.navegacion{visibility:hidden;opacity:0;height:0;transition:visibility .3s ease-in-outm opacity .5s linear,height .5s linear}.navegacion a{color:gray;text-decoration:none;font-size:2.2rem;display:block;text-align:center}.navegacion a:hover{color:purple}.mobile-menu{margin:auto}.mobile-menu img{width:5rem}.mostrar{visibility:visible;opacity:1;height:auto}

@@ -1,0 +1,62 @@
+// @import 'base/mixins';
+// @import 'base/variables';
+.navegacion{
+    // display: none;
+    // ANIMACION del menu hamburguesa
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-outm opacity 0.5s linear, height 0.5s linear ;
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a{
+        color: $principal;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+        
+
+        @include tablet{
+            margin-right: 2rem;
+            font-size: 1.8rem;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+        
+        &:hover{
+            color: $secundario;
+            
+        }
+        
+    }
+}
+
+.mobile-menu{
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+    transition: $transition;
+    @include tablet{
+        display: none;
+    }
+    img{
+        width: 5rem;
+    }
+}
+
+.mostrar{
+    // METODO HIDEN MENU HAMBURGUESA
+    visibility: visible;
+    opacity: 1;
+    height: 160px;
+    transition: $transition;
+}

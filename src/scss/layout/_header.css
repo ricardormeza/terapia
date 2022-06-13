@@ -1,0 +1,1 @@
+.header .contenido-header{display:flex;justify-content:space-between;align-items:center}.header .contenido-header .navegacion{display:flex;justify-content:space-around;gap:2rem}.header .contenido-header .navegacion a{font-size:2.2rem}.header a{color:#fff}.header a:hover{color:blue}.bg-header{background-image:url(/build/img/violin.webp);background-size:cover;height:50rem}

@@ -1,0 +1,15 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+
+//Pagina
+@import 'interior/contenido';
+
+//Layout
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+@import 'layout/navegacion';
+
+

@@ -1,0 +1,46 @@
+.btn-quienes{
+    width: 300px;
+    h4{
+        background: #fff;;
+        border-radius: 10px;
+        border: 2px solid $secundario;
+        color: $secundario;
+        padding: 1rem 6rem;
+        position: absolute;
+        @include desktop{
+            bottom: -5rem;
+        }
+        @include tabletDos{
+            bottom: 10rem;
+        }
+        @include telefono{
+            bottom: -22rem;
+            padding: 1rem;
+            left: 6rem;
+        }
+
+
+    }
+    text-align: center;
+}
+.contenido__main{
+    p{
+        color: $parrafo!important;
+    }
+}
+.main{
+    p{
+        color: white;
+
+    }
+}
+
+.main-grid{
+    p{
+        color: white;
+    }
+
+    .main-grid_texto{
+        color: white;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "rob-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "author": "Ricardo Ramirez meza",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "gulp-terser-js": "^5.2.2"
+  }
+}
