@@ -18,12 +18,19 @@
             padding: 1rem;
             left: 6rem;
         }
-
-
     }
     text-align: center;
 }
+.titulo-principal{
+    padding: 3rem;
+}
 .contenido__main{
+    .parrafo__uno{
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        align-items: center;
+    }
+
     p{
         color: $parrafo!important;
     }
@@ -32,6 +39,20 @@
     p{
         color: white;
 
+    }
+}
+.parrafo__dos{
+    background-color: $tercero;
+    
+    .parrafo__dos-texto{
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        align-items: center;
+        padding: 2rem;
+
+        p{
+            color: $parrafo;
+        }
     }
 }
 

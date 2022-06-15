@@ -476,12 +476,34 @@ body {
   }
 }
 
+.titulo-principal {
+  padding: 3rem;
+}
+
+.contenido__main .parrafo__uno {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+}
 .contenido__main p {
   color: #3b3b43 !important;
 }
 
 .main p {
   color: white;
+}
+
+.parrafo__dos {
+  background-color: #f3f3f3;
+}
+.parrafo__dos .parrafo__dos-texto {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  align-items: center;
+  padding: 2rem;
+}
+.parrafo__dos .parrafo__dos-texto p {
+  color: #3b3b43;
 }
 
 .main-grid p {
