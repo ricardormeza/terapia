@@ -1,3 +1,11 @@
+//H1 TITULO PRINCIPAL
+.titulo-principal{
+    padding: 3rem;
+    @include telefono{
+        padding: 12rem 0 0 0;
+    }
+}
+
 .btn-quienes{
     width: 300px;
     h4{
@@ -21,14 +29,36 @@
     }
     text-align: center;
 }
-.titulo-principal{
-    padding: 3rem;
-}
+// MAIN
 .contenido__main{
     .parrafo__uno{
+        align-items: center;
         display: grid;
         grid-template-columns: 250px 1fr;
-        align-items: center;
+        grid-template-areas: " imagen parrafoUno";
+        @include telefono{
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+            grid-template-areas:  
+            " imagen"
+            " parrafoUno";
+        }
+
+        picture{
+            grid-area: imagen;
+            align-self: center;
+            @include telefono{
+                width: 200px;
+                margin: 0 auto;
+            }
+        }
+
+        p{
+            grid-area: parrafoUno;
+            @include telefono{
+                text-align: justify;
+            }
+        }
     }
 
     p{
@@ -47,11 +77,31 @@
     .parrafo__dos-texto{
         display: grid;
         grid-template-columns: 1fr 250px;
+        grid-template-areas: "parrafoDos imagenDos";
+        @include telefono{
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+            grid-template-areas:  
+            " imagenDos"
+            " parrafoDos";
+        }
         align-items: center;
         padding: 2rem;
 
         p{
             color: $parrafo;
+            grid-area: parrafoDos;
+            @include telefono{
+                text-align: justify;
+            }
+        }
+        picture{
+            grid-area: imagenDos;
+            @include telefono{
+                width: 200px;
+                margin: 0 auto;
+            }
+            
         }
     }
 }
@@ -63,5 +113,51 @@
 
     .main-grid_texto{
         color: white;
+    }
+}
+
+//COMPROMISOS CON EL PACIENTE SECTION
+.compromisos__contenedor{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-areas: "compromisoUno compromisoDos";
+    align-items: center;
+    @include tablet{
+        grid-template-columns: 150px 1fr;
+    }
+    @include telefono{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+            "compromisoUno"
+            "compromisoDos";
+    }
+
+    picture{
+        grid-area: compromisoUno;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+
+}
+.compromisos__contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: compromisoDos;
+
+    h2{
+        margin: 2rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        li{
+            color: $parrafo;
+        }
     }
 }
