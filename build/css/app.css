@@ -535,7 +535,7 @@ li {
   }
 }
 .contenido__main p {
-  color: #3b3b43 !important;
+  color: #474747 !important;
 }
 
 .main p {
@@ -560,7 +560,7 @@ li {
   }
 }
 .parrafo__dos .parrafo__dos-texto p {
-  color: #3b3b43;
+  color: #474747;
   grid-area: parrafoDos;
 }
 @media (max-width: 480px) {
@@ -590,6 +590,10 @@ li {
   grid-template-columns: 350px 1fr;
   grid-template-areas: "compromisoUno compromisoDos";
   align-items: center;
+  background-image: url(/build/img/Circulo.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 90rem 3rem;
 }
 @media (min-width: 768px) {
   .compromisos__contenedor {
@@ -601,6 +605,7 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "compromisoUno" "compromisoDos";
+    background-position: 6rem 29rem;
   }
 }
 .compromisos__contenedor picture {
@@ -624,7 +629,101 @@ li {
   list-style: none;
 }
 .compromisos__contenedor-texto ul li {
-  color: #3b3b43;
+  color: #474747;
+}
+
+.contenedor__valores {
+  display: grid;
+  grid-template-columns: 90rem 27.5rem;
+  grid-template-areas: "mision valores";
+}
+@media (max-width: 810px) {
+  .contenedor__valores {
+    grid-template-columns: 52rem 27.5rem;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor__valores {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 190px;
+    grid-template-areas: "mision" "valores";
+  }
+}
+
+.contenedor__valores-uno {
+  border-right: 3px solid #474747;
+  grid-area: mision;
+}
+@media (max-width: 480px) {
+  .contenedor__valores-uno {
+    border: none;
+  }
+}
+
+.contenedor__valores-dos {
+  grid-area: valores;
+}
+.contenedor__valores-dos ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 0 0 5rem;
+}
+@media (max-width: 480px) {
+  .contenedor__valores-dos ul {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 0 0 -3rem;
+  }
+}
+.contenedor__valores-dos ul li {
+  color: #474747;
+}
+
+.mision .mision--titulo {
+  display: flex;
+  align-items: baseline;
+  gap: 3rem;
+}
+.mision .mision--titulo h3 {
+  padding: 0;
+  margin: 0;
+}
+.mision .mision--titulo picture {
+  width: 13%;
+  height: 50%;
+}
+.mision p {
+  width: 85%;
+  text-align: justify;
+  color: #474747;
+}
+
+.vision .vision--titulo {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.vision .vision--titulo h3 {
+  padding: 0;
+  margin: 0;
+}
+.vision .vision--titulo picture {
+  width: 13%;
+  height: 50%;
+}
+.vision p {
+  width: 85%;
+  text-align: justify;
+  color: #474747;
+}
+
+.contenedor__lesiones {
+  background-image: url(/build/img/BannerInferior-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
 }
 
 .footer--grid {

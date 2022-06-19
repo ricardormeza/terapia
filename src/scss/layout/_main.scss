@@ -122,8 +122,13 @@
     grid-template-columns: 350px 1fr;
     grid-template-areas: "compromisoUno compromisoDos";
     align-items: center;
+    background-image: url(/build/img/Circulo.webp);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 90rem 3rem;
     @include tablet{
         grid-template-columns: 150px 1fr;
+        // background-position: 48rem 3rem;
     }
     @include telefono{
         grid-template-columns: 1fr;
@@ -131,6 +136,7 @@
         grid-template-areas: 
             "compromisoUno"
             "compromisoDos";
+        background-position: 6rem 29rem;
     }
 
     picture{
@@ -160,4 +166,103 @@
             color: $parrafo;
         }
     }
+}
+
+//VALORES 
+.contenedor__valores{
+    display: grid;
+    grid-template-columns: 90rem 27.5rem;
+    grid-template-areas: "mision valores";
+    @include tabletDos{
+        grid-template-columns: 52rem 27.5rem;
+        margin-top: 5rem;
+    }
+    @include telefono{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 190px;
+        grid-template-areas: 
+            "mision"
+            "valores";
+    }
+}
+.contenedor__valores-uno{
+    // border: 1px solid red;
+    border-right: 3px solid $parrafo;
+    grid-area: mision;
+    @include telefono{
+        border: none;
+    }
+}
+.contenedor__valores-dos{
+    grid-area: valores;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0 0 0 5rem;
+        @include telefono{
+            flex-direction: row;
+            gap: 1rem;
+            margin: 0 0 0 -3rem;
+        }
+        
+        li{
+            color: $parrafo;
+        }
+    }
+}
+
+.mision{
+
+    .mision--titulo{
+        display: flex;
+        align-items: baseline;
+        gap: 3rem;
+        h3{
+            padding: 0;
+            margin: 0;
+        }
+
+        picture{
+            width: 13%;
+            height: 50%;
+        }
+    }
+    p{
+        width: 85%;
+        text-align: justify;
+        color: $parrafo;
+    }
+}
+
+.vision{
+
+    .vision--titulo{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        h3{
+            padding: 0;
+            margin: 0;
+        }
+
+        picture{
+            width: 13%;
+            height: 50%;
+        }
+    }
+    p{
+        width: 85%;
+        text-align: justify;
+        color: $parrafo;
+    }   
+}
+
+// =============LESIONES =================
+.contenedor__lesiones{
+    background-image: url(/build/img/BannerInferior-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
 }
