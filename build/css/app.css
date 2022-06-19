@@ -725,6 +725,49 @@ li {
   background-size: cover;
   height: 45rem;
 }
+@media (max-width: 810px) {
+  .contenedor__lesiones {
+    background-position: -75rem 0rem;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor__lesiones {
+    background-position: -120rem 0rem;
+    height: 60rem;
+  }
+}
+
+.contenido--lesiones {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contenido--lesiones h2 {
+  color: #f3f3f3;
+  margin: 3rem;
+  padding: 0;
+}
+.contenido--lesiones h2 span {
+  color: #736bfe;
+  font-weight: bold;
+}
+.contenido--lesiones ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+}
+.contenido--lesiones ul li {
+  line-height: 1;
+  list-style: none;
+}
+.contenido--lesiones ul li p {
+  color: #736bfe;
+}
+.contenido--lesiones ul li p span {
+  color: #f3f3f3;
+}
 
 .footer--grid {
   display: grid;
