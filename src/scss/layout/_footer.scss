@@ -1,8 +1,42 @@
-.footer--grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.footer{
+    background: $bg-footer;
 
-    a{
-        color: white;
+
+    .footer--titulo{
+        display: flex;
+        padding: 0;
+        color: $secundario;
     }
+}
+.footer--contenido{
+    display: grid;
+    grid-template-columns: 47.75rem 27.875rem 18.75rem;
+    gap: 2rem;
+    @include tabletDos{
+        // grid-template-columns: 47.75rem 20.875rem 18.75rem;
+        grid-template-columns: 39.75rem 16.875rem 18.75rem;
+    }
+    @include telefono{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .seccion-uno{
+        display: flex;
+        flex-direction: column;
+        
+        a{
+            color: $tercero;
+            &:hover{
+                color: $secundario;
+            }
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+    
 }

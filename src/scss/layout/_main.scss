@@ -311,3 +311,35 @@
         }
     }
 }
+
+// ================REDES SOCIALES SEGURO GASTOS=======================
+.redes{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0 auto;
+
+    @include telefono{
+        width: 390px;
+    }
+}
+.seguro-gastos{
+    margin: 0 auto;
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+
+    @include telefono{
+        font-size: 1.3rem;
+        justify-content: center;
+        width: 390px;
+    }
+    a{
+        color: $parrafo;
+
+        &:hover{
+            color: $secundario;
+        }
+    }
+}
