@@ -20,122 +20,103 @@
                 <img src="/build/img/icons8-menu-90.webp" alt="icono menu responsive">
             </div>
             <nav class="navegacion">
-                <a href="nosotros.html">Cono&oacute;cenos</a>
-                <a href="curso.html">Masajes</a>
+                <a href="index.html">Cono&oacute;cenos</a>
+                <a href="#">Masajes</a>
                 <!-- <a href="inscripciones.html">Inscripciones</a> -->
                 <a href="contacto.html">Contacto</a>
             </nav>
         </div>
-        <div class="bg-header"></div>
+        <div class="bg-header-massage">
+            <div class="contenedor bg-header--content">
+                <h3>Disfruta, relájate y desconéctate.</h3>
+            <picture>
+                <source srcset="build/img/logotipo-original-01.png" media="(min-width: 600px)">
+                <img src="build/img/logotipo-original-01.png" alt="imagen de libreta" style="width: 15%; height:50%">
+            </picture>
+            </div>
+        </div>
     </header>
-    <div class="contenedor btn-quienes">
-        <h4>¿Qu&iacute;enes Somos?</h4>
+    <div class="contenedor btn-quienes--masaje">
+        <h4> <span>Pedir Informes</span> | Agendar cita</h4>
     </div>
     <div class="separacion"></div>
     <main class="main">
         <div class="contenedor">
-            <h1 class="titulo-principal">Up Therapy MX</h1>
             <div class="contenido__main">
-                <div class="parrafo__uno">
+                <div class="parrafo__uno-masaje">
                     <picture>
-                        <source class="webp" srcset="build/img/curita.webp" media="(min-width: 600px)">
-                        <img src="build/img/curita.png" alt="imagen de curacion" style="width: 150px; height:150px">
+                        <source class="webp" srcset="build/img/Ventana.webp" media="(min-width: 600px)">
+                        <img src="build/img/Ventana.png" alt="imagen de ventana con planta" style="width: 350px; height:390px">
                     </picture>
-                    <p><span>UP Therapy MX</span> es una cl&iacute;nica que ha desarrollado su 
-                        actividad en el <span> sector de la salud</span> ofreciendo servicios de 
-                        <span>rehabilitación</span> y terapia física desde diciembre del 2017. La empresa
-                        busca una constante innovación utilizando la tecnología más actualizada en los métodos
-                        aplicados para el bienestar de los pacientes generando una rapida recuperación.
-                    </p>
+                    <div class="parrafo__uno-texto">
+                        <h1>Up SPA clínica de terapia muscular.</h1>
+                        <p> Nuestro equipo de terapeutas son altamente calificados con el propósito de ofrecerte los mejores servicios de masaje para tu alivio muscular</p>
+                    </div>
                 </div>
                 <br>
             </div>
             
         </div>
     </main>
-    <div class="parrafo__dos">
-        <div class="contenedor parrafo__dos-texto">
-            <p>La filosofia de <span>UP Therapy MX</span>, se basa en realizar un razonamiento
-                clínico personalizado para un tratamiento eficaz de acuerdo a cada lesión o 
-                patología. Cuenta con un equipo de trabajo experto, el cuál busca la mejora
-                solución que se adapte a las necesidades de cada paciente.
-            </p>
+    <!-- CAROUSEL INICIO -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <section class="masajes">
+        <div class="linea">
+            <h4>.</h4>
+        </div>
+        <div class="masajes-imagenes">
             <picture>
-                <source srcset="build/img/libreta-check.webp" media="(min-width: 600px)">
-                <img src="build/img/libreta-check.png" alt="imagen de libreta" style="width: 150px; height:150px">
+                <source class="webp" srcset="build/img/Masaje-Relajante.webp" media="(min-width: 600px)">
+                <img src="build/img/Masaje-Relajante.png" alt="imagen de masaje" style="width: 350px; height:390px">
             </picture>
         </div>
-    </div>
-    <div class="separacion"></div>
-    <section class="contenedor compromisos__contenedor">
+        <div class="masajes-contenido">
+            <h4>Masaje relajante</h4>
+            <p>Masaje relajante: relaja, induce al descanso y bienestar, reduce estrés, y neurosis.
+                Fusionamos las mejores técnicas de masaje con deslizamientos largos, ligeros y lentos.
+                Regenerando equilibrio entre mente y cuerpo
+            </p>
+            <div class="masajes-contenido-precio">
+                <p>60 Minutos: <span>$650.00</span></p>
+                <p>90 Minutos: <span>$900.00</span></p>
+            </div>
+            <div class="btn-agendar">
+                <a href="">Agendar cita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAROUSEL FIN -->
+    
+    <!-- OPINION INICIO -->
+    <div class="contenedor opinion">
         <picture>
-            <source srcset="build/img/corazon.webp" media="(min-width: 600px)">
-            <img src="build/img/corazon.png" alt="imagen de corazon" style="width: 150px; height:150px">
+            <source class="webp" srcset="build/img/opinion.webp" media="(min-width: 600px)">
+                        <img src="build/img/opinion.png" alt="imagen de ventana con planta" style="width: 500px; height:390px">
         </picture>
-        <div class="compromisos__contenedor-texto">
-            <h2>Compromisos con el paciente</h2>
-            <ul>
-                <li> > Tratamiento de alta calidad centrado en el <span>paciente</span>. </li>
-                <li> > Tratamiento personalizado e individualizado en el paciente.</li>
-                <li> > Trato digno, amable y servicial.</li>
-                <li> > Facturación de los servicios y documentación para su <span>aseguradora</span>.</li>
-                <li> > Costo justo por el tratamiento, precios accesibles y pago solo por lo que necesitas.</li>
-            </ul>
+        <div class="opinion--texto">
+            <h2>Conoce la opinión de nuestros clientes.</h2>
+            <p>Para <span>Up SPA</span> la calidad es un valor esencial y cuidamos hasta el más mínimo detalle, por ello tu opinión es muy importante para nosotros y queremos conocerla.</p>
         </div>
-    </section>
-    <div class="separacion"></div>
-    <section class="contenedor contenedor__valores">
-        <div class="contenedor__valores-uno">
-            <div class="mision">
-                <div class="mision--titulo">
-                    <h3>Misión</h3>
-                    <picture>
-                        <source srcset="build/img/montaña.webp" media="(min-width: 600px)">
-                        <img src="build/img/montaña.png" alt="imagen de montaña" style="width: 55%; height:100%">
-                    </picture>
-                </div>
-                <p>Dar <span>terapia</span> eficaz que sea adecuada a cada paciente para que 
-                retome lo antes posible sus actividades diarias utilizando los métodos más innovadores.</p>
-            </div>
-            <div class="vision">
-                <div class="vision--titulo">
-                    <h3>Visión</h3>
-                    <picture>
-                        <source srcset="build/img/ojo.webp" media="(min-width: 600px)">
-                        <img src="build/img/ojo.png" alt="imagen de ojo" style="width: 55%; height:100%">
-                    </picture>
-                </div>
-                <p>Ser la clínica de rehabilitación más reconocida en México en 5 años.</p>
-            </div>
-        </div>
-        <div class="contenedor__valores-dos">
-            <h3>Valores</h3>
-            <ul>
-                <li> <span>Calidad</span> </li>
-                <li> <span>Respeto</span> </li>
-                <li> <span>Innovación</span> </li>
-                <li> <span>Equidad</span> </li>
-                <li> <span>Honestidad</span> </li>
-            </ul>
-        </div>
-    </section>
-    <div class="separacion">
-        <br>
     </div>
-    <!-- LESIONES MAS ATENDIDAS INICIO -->
-    <section class=" contenedor__lesiones">
-        <div class="contenedor contenido--lesiones">
-            <h2>Lesiones <span>más frecuentes</span> que atendemos.</h2>
-            <ul>
-                <li><p>> <span>Dolor de espalda baja(lumbalgia).</span></p> </li>
-                <li><p>> <span>Dolor de cuello.</span></p></li>
-                <li><p>> <span>Esguinces.</span></p></li>
-                <li><p>> <span>Cirugías ortopédicas o traumatológicas.</span></p></li>
-                <li><p>> <span>Preescripción del ejercicio.</span></p></li>
-            </ul>
-        </div>
-    </section>
-    <!-- LESIONES MAS ATENDIDAS FIN -->
+    <!-- OPINION FIN -->
     <div class="separacion"></div>
     <!-- REDES SEGURO GASTOS INICIO -->
     <section class="contenedor contenedor__redes">
@@ -179,7 +160,7 @@
     <!-- REDES SEGURO GASTOS FIN -->
     <div class="separacion"></div>
     <!-- FOOTER INICIO -->
-    <footer class="footer">
+    <footer class="footerM">
         <div class="contenedor footer--titulo">
             <h3>Contáctanos</h3>
         </div>

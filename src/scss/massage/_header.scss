@@ -1,0 +1,145 @@
+.bg-header-massage{
+    background-image: url(/build/img/Masajes.webp);
+    // background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 44rem;
+    
+    @include tablet{
+        background-position: -35rem 0rem;
+    }
+    @include telefono{
+        background-position: -74rem 0rem;
+    }
+    @include desktop{
+        background-position: center center;
+    }
+}
+.bg-header--content{
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    h3{
+        font-size: 3rem;
+        font-weight: bold;
+        color: $titulo-header;
+        margin-top: 20rem;
+        @include tablet{
+            margin-top: 8rem;
+        }
+        @include telefono{
+            margin-top: 3rem;
+        }
+    }
+    picture{
+
+        @include telefono{
+            width: 200%;
+            height: 200%;
+            margin-left: 14rem;
+            margin-bottom: 2rem;
+
+        }
+    }
+}
+// ===============QUIENES BTN AGENDA====================
+.btn-quienes--masaje{
+    width: 300px;
+    h4{
+        background: #fff;;
+        bottom: 26rem;
+        border-radius: 10px;
+        border: 2px solid $secundario;
+        color: $secundario;
+        padding: 1rem 6rem;
+        position: absolute;
+        font-weight: normal;
+        @include desktopDos{
+            bottom: 72.3rem;
+        }
+        @include tabletDos{
+            bottom: 43rem;
+        }
+        @include telefono{
+            bottom: 11rem;
+            padding: 1rem;
+            left: 1rem;
+        }
+
+        span{
+            color: $parrafo;
+        }
+    }
+    text-align: center;
+}
+
+// ==========MAIN=============
+.parrafo__uno-masaje{
+    // display: flex;
+    // align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include telefono{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    picture{
+        height: 350px;
+        width: auto;
+    }
+}
+.parrafo__uno-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    // margin: 3rem 0rem 0rem 6rem;
+    
+    h1{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+// =========CAROUSEL===========
+.swiper {
+        width: 600px;
+        height: 300px;
+    }
+// =========MASAJES===========
+.masajes{
+    background-color: $parrafo;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+}
+
+    //=====OPINION===========
+.opinion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .opinion--texto{
+        display: flex;
+        flex-direction: column;
+        
+        h2{
+            color: $secundario;
+            font-weight: bold;
+        }
+        p{
+            color: $parrafo;
+        }
+    }
+}

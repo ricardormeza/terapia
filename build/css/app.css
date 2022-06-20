@@ -896,3 +896,192 @@ li {
   height: 160px;
   transition: all 400ms ease;
 }
+
+.bg-header-massage {
+  background-image: url(/build/img/Masajes.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 44rem;
+}
+@media (min-width: 768px) {
+  .bg-header-massage {
+    background-position: -35rem 0rem;
+  }
+}
+@media (max-width: 480px) {
+  .bg-header-massage {
+    background-position: -74rem 0rem;
+  }
+}
+@media (min-width: 1024px) {
+  .bg-header-massage {
+    background-position: center center;
+  }
+}
+
+.bg-header--content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.bg-header--content h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #003762;
+  margin-top: 20rem;
+}
+@media (min-width: 768px) {
+  .bg-header--content h3 {
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .bg-header--content h3 {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .bg-header--content picture {
+    width: 200%;
+    height: 200%;
+    margin-left: 14rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.btn-quienes--masaje {
+  width: 300px;
+  text-align: center;
+}
+.btn-quienes--masaje h4 {
+  background: #fff;
+  bottom: 26rem;
+  border-radius: 10px;
+  border: 2px solid #736bfe;
+  color: #736bfe;
+  padding: 1rem 6rem;
+  position: absolute;
+  font-weight: normal;
+}
+@media (max-width: 1024px) {
+  .btn-quienes--masaje h4 {
+    bottom: 72.3rem;
+  }
+}
+@media (max-width: 810px) {
+  .btn-quienes--masaje h4 {
+    bottom: 43rem;
+  }
+}
+@media (max-width: 480px) {
+  .btn-quienes--masaje h4 {
+    bottom: 11rem;
+    padding: 1rem;
+    left: 1rem;
+  }
+}
+.btn-quienes--masaje h4 span {
+  color: #474747;
+}
+
+.parrafo__uno-masaje {
+  align-items: center;
+  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 480px) {
+  .parrafo__uno-masaje {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.parrafo__uno-masaje picture {
+  height: 350px;
+  width: auto;
+}
+
+.parrafo__uno-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.parrafo__uno-texto h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.parrafo__uno-texto p {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: justify;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.masajes {
+  background-color: #474747;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
+}
+
+.opinion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.opinion .opinion--texto {
+  display: flex;
+  flex-direction: column;
+}
+.opinion .opinion--texto h2 {
+  color: #736bfe;
+  font-weight: bold;
+}
+.opinion .opinion--texto p {
+  color: #474747;
+}
+
+.footerM {
+  background: #f3f3f3;
+}
+.footerM .footer--titulo {
+  display: flex;
+  padding: 0;
+  color: #736bfe;
+}
+
+.footer--contenido {
+  display: grid;
+  grid-template-columns: 47.75rem 27.875rem 18.75rem;
+  gap: 2rem;
+}
+@media (max-width: 810px) {
+  .footer--contenido {
+    grid-template-columns: 39.75rem 16.875rem 18.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer--contenido {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.footer--contenido .seccion-uno {
+  display: flex;
+  flex-direction: column;
+}
+.footer--contenido .seccion-uno a {
+  color: #474747;
+}
+.footer--contenido .seccion-uno a:hover {
+  color: #736bfe;
+}
+.footer--contenido .seccion-uno nav {
+  display: flex;
+  flex-direction: column;
+}
