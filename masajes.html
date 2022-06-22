@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Up Therapy MX | Masajes </title>
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" href="build/img/UpTherapy-ico.ico">
 </head>
 <body>
     <header class="header ">
@@ -31,7 +32,7 @@
                 <h3>Disfruta, relájate y desconéctate.</h3>
             <picture>
                 <source srcset="build/img/logotipo-original-01.png" media="(min-width: 600px)">
-                <img src="build/img/logotipo-original-01.png" alt="imagen de libreta" style="width: 15%; height:50%">
+                <img src="build/img/logotipo-original-01.png" alt="imagen de libreta" style="width: 100%; height:100%">
             </picture>
             </div>
         </div>
@@ -44,7 +45,7 @@
         <div class="contenedor">
             <div class="contenido__main">
                 <div class="parrafo__uno-masaje">
-                    <picture>
+                    <picture class="ventana-masaje">
                         <source class="webp" srcset="build/img/Ventana.webp" media="(min-width: 600px)">
                         <img src="build/img/Ventana.png" alt="imagen de ventana con planta" style="width: 350px; height:390px">
                     </picture>
@@ -59,58 +60,106 @@
         </div>
     </main>
     <!-- CAROUSEL INICIO -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-    <section class="masajes">
-        <div class="linea">
-            <h4>.</h4>
-        </div>
-        <div class="masajes-imagenes">
-            <picture>
-                <source class="webp" srcset="build/img/Masaje-Relajante.webp" media="(min-width: 600px)">
-                <img src="build/img/Masaje-Relajante.png" alt="imagen de masaje" style="width: 350px; height:390px">
-            </picture>
-        </div>
-        <div class="masajes-contenido">
-            <h4>Masaje relajante</h4>
-            <p>Masaje relajante: relaja, induce al descanso y bienestar, reduce estrés, y neurosis.
-                Fusionamos las mejores técnicas de masaje con deslizamientos largos, ligeros y lentos.
-                Regenerando equilibrio entre mente y cuerpo
-            </p>
-            <div class="masajes-contenido-precio">
-                <p>60 Minutos: <span>$650.00</span></p>
-                <p>90 Minutos: <span>$900.00</span></p>
-            </div>
-            <div class="btn-agendar">
-                <a href="">Agendar cita</a>
-            </div>
+    <section class="slider">
+        <div class="container slider__container">
+            <img src="build/img/flechauno.svg" alt="flecha uno" class="slider__arrow" id="before">
+
+            <section class="slider__body slider__body--show" data-id="1">
+                <!-- <div class="texto-azul">
+                    <h3>masaje relajante</h3>
+                </div> -->
+                <figure class="slider__picture">
+                    <img src="build/img/Masaje-Relajante.webp" width="100%" height="100%" alt="Masaje relajante" class="slider__img">
+                </figure>
+                <div class="slider__text">
+                    <div class="slider__review-title">
+                        <h2 class="subtitle">Masaje relajante</h2>
+                    </div>
+                    <p class="slider__review"><span>Masaje relajante</span>: relaja, induce al descanso y bienestar, reduce estrés, insomnio y neurosis. Fusionamos las mejores técnicas de masaje con deslizamientos largos, ligeros y lentos. Regenerando equilibrio entre mente y cuerpo.</p>
+                    <div class="masajes-contenido-precio">
+                        <p>60 Minutos: <span>$650.00</span></p>
+                        <p>90 Minutos: <span>$900.00</span></p>
+                    </div>
+                    <div class="btn-agendar">
+                        <a href="tel:5511775805">Agendar cita</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DOS -->
+            <section class="slider__body" data-id="2">
+                <figure class="slider__picture">
+                    <img src="build/img/Masaje-Descontracturante.webp" width="100%" height="100%" alt="Masaje relajante" class="slider__img">
+                </figure>
+                <div class="slider__text">
+                    <div class="slider__review-title">
+                        <h2 class="subtitle">Masaje descontracturante</h2>
+                    </div>
+                    <p class="slider__review"><span>Alivio muscular o descontracturante</span>: libera tensión, disminuye contracturas y dolores musculares. Esta técnica utiliza presión profunda, manipulaciones sobre músculos y estiramiento. </p>
+                    <div class="masajes-contenido-precio">
+                        <p>60 Minutos: <span>$750.00</span></p>
+                        <p>90 Minutos: <span>$1,000.00</span></p>
+                    </div>
+                    <div class="btn-agendar">
+                        <a href="tel:5511775805">Agendar cita</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- TRES -->
+            <section class="slider__body" data-id="3">
+                <figure class="slider__picture">
+                    <img src="build/img/Masaje-PiernasCansadas.webp" width="100%" height="100%" alt="Masaje relajante" class="slider__img">
+                </figure>
+                <div class="slider__text">
+                    <div class="slider__review-title">
+                        <h2 class="subtitle">Masaje piernas cansadas</h2>
+                    </div>
+                    <p class="slider__review"><span>Masaje para piernas cansadas</span>: masaje que ayuda a disminuir agotamiento y pesadez por mala circulación, exceso de actividad física o por mucho tiempo parado o sentado. Previniendo así problemas circulatorios, de la punta del pie hasta las caderas. </p>
+                    <div class="masajes-contenido-precio">
+                        <p>30 Minutos de masaje más 20 minutos de presoterapia: <span>$500.00</span></p>
+                        
+                    </div>
+                    <div class="btn-agendar">
+                        <a href="tel:5511775805">Agendar cita</a>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- CUATRO -->
+            <section class="slider__body" data-id="4">
+                <figure class="slider__picture">
+                    <img src="build/img/Masaje-Deportivo.webp" width="100%" height="100%" alt="Masaje relajante" class="slider__img">
+                </figure>
+                <div class="slider__text">
+                    <div class="slider__review-title">
+                        <h2 class="subtitle">Masaje deportivo</h2>
+                    </div>
+                    <p class="slider__review">El masaje se personaliza a la necesidad del paciente, que puede ser preventivo, antes de competencia y después de competencia, con lo cual mejora tu desempeño deportivo. Evitando la tagia muscular y lesiones musculares. En ambos masajes incluye presoterapia y pistola de percusión. </p>
+                    <div class="masajes-contenido-precio">
+                        <p>Pre-deportivo: 80 minutos:  <span>$700.00</span></p>
+                        <p>Post-deportivo: 80 minutos: <span>$850.00</span></p>
+                    </div>
+                    <div class="btn-agendar">
+                        <a href="tel:5511775805">Agendar cita</a>
+                    </div>
+                </div>
+            </section>
+            <img src="build/img/flechados.svg" alt="flecha uno" class="slider__arrow" id="next">
         </div>
     </section>
-
     <!-- CAROUSEL FIN -->
-    
+
+    <div class="separacion"></div>
     <!-- OPINION INICIO -->
     <div class="contenedor opinion">
-        <picture>
-            <source class="webp" srcset="build/img/opinion.webp" media="(min-width: 600px)">
-                        <img src="build/img/opinion.png" alt="imagen de ventana con planta" style="width: 500px; height:390px">
-        </picture>
+        <a href="https://g.page/Up-Therapy-MX?share" target="_blank" aria-label="enlace a sitio de google">
+            <picture>
+                <source class="webp" srcset="build/img/opinion.webp" media="(min-width: 600px)">
+                <img src="build/img/opinion.png" alt="imagen de ventana con planta" 
+                style="width: 375px; height:330px">
+            </picture>
+        </a>
         <div class="opinion--texto">
             <h2>Conoce la opinión de nuestros clientes.</h2>
             <p>Para <span>Up SPA</span> la calidad es un valor esencial y cuidamos hasta el más mínimo detalle, por ello tu opinión es muy importante para nosotros y queremos conocerla.</p>
@@ -165,22 +214,22 @@
             <h3>Contáctanos</h3>
         </div>
         <div class="contenedor footer--contenido">
-            <div class="seccion-uno">
-                <a href="">E-mail: tufisio@uptherapy.com.mx</a>
-                <a href="">Télefono: +52 554 757 6392 o +52 558 914 7374</a>
-                <a href="">WhatsApp: +52 554 757 6392 o +52 551 177 5805</a>
-                <a href="">Calzada Mariano Escobedo Ext. 543 Ciudad de México.</a>
+            <div class="seccion-uno-masajes">
+                <a href="mailto:tufisio@uptherapy.com.mx">E-mail: tufisio@uptherapy.com.mx</a>
+                <a href="tel:5547576392">Télefono: +52 554 757 6392 o +52 558 914 7374</a>
+                <a href="https://wa.me/525511775805">WhatsApp: +52 554 757 6392 o +52 551 177 5805</a>
+                <a href="https://g.page/Up-Therapy-MX?share">Calzada Mariano Escobedo Ext. 543 Ciudad de México.</a>
             </div>
-            <div class="seccion-uno">
+            <div class="seccion-uno-masajes">
                 <nav>
-                    <a href="">Inicio</a>
-                    <a href="">¿Quiénes somos?</a>
-                    <a href="">¿Cómo funciona?</a>
-                    <a href="">Especialidades</a>
-                    <a href="">Fisioterapia a domicilio</a>
+                    <a href="index.html">Inicio</a>
+                    <a href="#">¿Quiénes somos?</a>
+                    <a href="#">¿Cómo funciona?</a>
+                    <a href="#">Especialidades</a>
+                    <a href="#">Fisioterapia a domicilio</a>
                 </nav>
             </div>
-            <div class="seccion-uno">
+            <div class="seccion-uno-masajes">
                 <a href="">Servicio e Innovaciones.</a>
                 <a href="">Seguro de gastos médicos</a>
                 <a href="">Aviso de Privacidad.</a>

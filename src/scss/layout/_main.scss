@@ -204,7 +204,7 @@
         @include telefono{
             flex-direction: row;
             gap: 1rem;
-            margin: 0 0 0 -3rem;
+            margin: 0 0 0 -4.5rem;
         }
         
         li{
@@ -321,7 +321,7 @@
     margin: 0 auto;
 
     @include telefono{
-        width: 390px;
+        width: 360px;
     }
 }
 .seguro-gastos{
@@ -333,7 +333,7 @@
     @include telefono{
         font-size: 1.3rem;
         justify-content: center;
-        width: 390px;
+        width: 360px;
     }
     a{
         color: $parrafo;

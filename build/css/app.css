@@ -674,7 +674,7 @@ li {
   .contenedor__valores-dos ul {
     flex-direction: row;
     gap: 1rem;
-    margin: 0 0 0 -3rem;
+    margin: 0 0 0 -4.5rem;
   }
 }
 .contenedor__valores-dos ul li {
@@ -778,7 +778,7 @@ li {
 }
 @media (max-width: 480px) {
   .redes {
-    width: 390px;
+    width: 360px;
   }
 }
 
@@ -792,7 +792,7 @@ li {
   .seguro-gastos {
     font-size: 1.3rem;
     justify-content: center;
-    width: 390px;
+    width: 360px;
   }
 }
 .seguro-gastos a {
@@ -832,14 +832,17 @@ li {
   flex-direction: column;
 }
 .footer--contenido .seccion-uno a {
-  color: #f3f3f3;
+  color: white !important;
 }
 .footer--contenido .seccion-uno a:hover {
-  color: #736bfe;
+  color: #736bfe !important;
 }
 .footer--contenido .seccion-uno nav {
   display: flex;
   flex-direction: column;
+}
+.footer--contenido .seccion-uno nav a {
+  color: white;
 }
 
 .navegacion {
@@ -940,9 +943,17 @@ li {
     margin-top: 3rem;
   }
 }
+.bg-header--content picture {
+  width: 16rem;
+}
+@media (max-width: 810px) {
+  .bg-header--content picture {
+    width: 12rem;
+  }
+}
 @media (max-width: 480px) {
   .bg-header--content picture {
-    width: 200%;
+    width: 11rem;
     height: 200%;
     margin-left: 14rem;
     margin-bottom: 2rem;
@@ -978,6 +989,11 @@ li {
     bottom: 11rem;
     padding: 1rem;
     left: 1rem;
+  }
+}
+@media (min-width: 480px) {
+  .btn-quienes--masaje h4 {
+    bottom: 22rem;
   }
 }
 .btn-quienes--masaje h4 span {
@@ -1025,25 +1041,264 @@ li {
 }
 
 .masajes {
-  background-color: #474747;
+  background-color: #f3f3f3;
   display: grid;
-  grid-template-columns: 0.3fr 1fr 1fr;
+  grid-template-columns: 0.3fr 579px 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 810px) {
+  .container {
+    overflow: visible;
+    width: max-content;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+.slider {
+  background-color: #f3f3f3;
+  padding: 40px 0;
+}
+@media (max-width: 480px) {
+  .slider {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.slider__container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 480px) {
+  .slider__container {
+    grid-template-columns: 25px 290px 25px;
+  }
+}
+
+.slider__body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  transition: opacity 1.5s;
+}
+@media (max-width: 810px) {
+  .slider__body {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .slider__body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    margin-left: 10px;
+    width: 100%;
+  }
+}
+
+.slider__body--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+@media (max-width: 480px) {
+  .slider__picture {
+    margin: 0;
+    margin-left: -4rem;
+  }
+}
+
+.slider__text {
+  max-width: 600px;
+}
+@media (max-width: 480px) {
+  .slider__text {
+    max-width: 400px;
+    margin-left: 2rem;
+  }
+}
+
+.slider__img {
+  border-radius: 1rem;
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .slider__img {
+    width: 75%;
+  }
+}
+
+.slider__arrow {
+  cursor: pointer;
+  width: 55%;
+}
+@media (max-width: 480px) {
+  .slider__arrow {
+    width: 90%;
+    border-radius: 50%;
+    background-color: #86b1c6;
+  }
+}
+
+.lineas picture {
+  transform: rotate(90deg);
+  width: 80%;
+  margin-top: 11rem;
+}
+
+.subtitle {
+  color: #6968a2;
+  font-weight: bold;
+  text-align: inherit;
+}
+
+.slider__review {
+  color: #474747;
+  width: 80%;
+  border-top: 4px solid #616393;
+  text-align: justify;
+}
+
+.slider__review-title {
+  color: #474747;
+  width: 80%;
+}
+.slider__review-title h2 {
+  font-size: 2.2rem;
+}
+
+.masajes-imagenes picture {
+  width: 100%;
+  height: 100%;
+}
+
+.masajes-contenido h4 {
+  color: #6968a2;
+}
+.masajes-contenido p {
+  color: #474747;
+  width: 80%;
+}
+.masajes-contenido .masaje-linea {
+  border-top: 4px solid gray;
+}
+
+.masajes-contenido-precio {
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  .masajes-contenido-precio {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.masajes-contenido-precio p {
+  color: #474747;
+  width: 250px !important;
+}
+.masajes-contenido-precio span {
+  color: #616393;
+  font-weight: bold;
+}
+
+.btn-agendar {
+  background-color: #ae94db;
+  border-radius: 28px;
+  border: 1px solid #ae94db;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.btn-agendar:hover {
+  background-color: #736bfe;
+}
+.btn-agendar a {
+  color: #f3f3f3;
+}
+@media (max-width: 480px) {
+  .btn-agendar {
+    margin-left: 4rem;
+  }
 }
 
 .opinion {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 480px) {
+  .opinion {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .opinion picture {
+    margin: 0;
+    width: 75% !important;
+  }
+}
 .opinion .opinion--texto {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 480px) {
+  .opinion .opinion--texto {
+    width: 98%;
+  }
 }
 .opinion .opinion--texto h2 {
   color: #736bfe;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .opinion .opinion--texto h2 {
+    width: 93%;
+  }
+}
 .opinion .opinion--texto p {
   color: #474747;
+}
+@media (max-width: 480px) {
+  .opinion .opinion--texto p {
+    text-align: justify;
+    width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ventana-masaje {
+    opacity: 0 !important;
+    height: 1px !important;
+  }
 }
 
 .footerM {
@@ -1084,4 +1339,22 @@ li {
 .footer--contenido .seccion-uno nav {
   display: flex;
   flex-direction: column;
+}
+
+.seccion-uno-masajes {
+  display: flex;
+  flex-direction: column;
+}
+.seccion-uno-masajes a {
+  color: black !important;
+}
+.seccion-uno-masajes a:hover {
+  color: #736bfe !important;
+}
+.seccion-uno-masajes nav {
+  display: flex;
+  flex-direction: column;
+}
+.seccion-uno-masajes nav a {
+  color: black;
 }

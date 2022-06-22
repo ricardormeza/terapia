@@ -4,6 +4,11 @@
         @content;
     }
 }
+@mixin telefonoyo {
+    @media (min-width: #{$telefono}) {
+        @content;
+    }
+}
 @mixin telefono {
     @media (max-width: #{$telefono}) {
         @content;

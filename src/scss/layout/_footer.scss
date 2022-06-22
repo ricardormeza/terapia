@@ -1,7 +1,6 @@
 .footer{
     background: $bg-footer;
 
-
     .footer--titulo{
         display: flex;
         padding: 0;
@@ -26,15 +25,19 @@
         flex-direction: column;
         
         a{
-            color: $tercero;
+            color: white!important;
             &:hover{
-                color: $secundario;
+                color: $secundario!important;
             }
         }
 
         nav{
             display: flex;
             flex-direction: column;
+            
+            a{
+                color: white;
+            }
         }
 
     }

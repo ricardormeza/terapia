@@ -40,3 +40,24 @@
     }
     
 }
+.seccion-uno-masajes{
+    display: flex;
+    flex-direction: column;
+    
+    a{
+        color: black!important;
+        &:hover{
+            color: $secundario!important;
+        }
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+        a{
+            color: black;
+        }
+    }
+
+}

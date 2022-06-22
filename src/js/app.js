@@ -16,26 +16,36 @@ function navegacionResponsive(){
     // console.log('clickiiiii');
 }
 
-// =======SWIPER===========
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
 
-    // If we need pagination
-    pagination: {
-    el: '.swiper-pagination',
-    },
+//============================ carrusel
+(function () {
+    const sliders = [...document.querySelectorAll('.slider__body')];
+    //console.log(sliders);
+    const arrowNext = document.querySelector('#next');
+    const arrowBefore = document.querySelector('#before');
+    let value;
 
-    // Navigation arrows
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
+    arrowNext.addEventListener('click', ()=>changePosition(1));
+    arrowBefore.addEventListener('click', ()=>changePosition(-1));
 
-    // And if we need scrollbar
-    scrollbar: {
-    el: '.swiper-scrollbar',
-    },
-});
 
+    function changePosition(change){
+        // console.log(change)
+        const currentElement = Number(document.querySelector('.slider__body--show').dataset.id);
+
+        //console.log(currentElement)
+
+        value = currentElement;
+        value+= change; 
+        // console.log(value);
+        console.log(sliders.length);
+        if(value === 0 || value == sliders.length+1){
+            value = value === 0 ? sliders.length : 1;
+        }
+
+        sliders[currentElement-1].classList.toggle('slider__body--show');
+        sliders[value-1].classList.toggle('slider__body--show');
+
+    }
+    
+})()
